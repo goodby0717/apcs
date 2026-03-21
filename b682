@@ -1,0 +1,10 @@
+p=input().split()
+hh=int(p[0])
+mm=int(p[1])
+t=hh*60+mm
+begin=7*60+30
+end=17*60
+if begin <= t < end:
+    print("At School")
+else:
+    print("Off School")
