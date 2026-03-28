@@ -1,6 +1,6 @@
 while True:
     try:
-        y=int(input())#把年讀人
+        y=int(input())
         if y ==0:
             break
         if y%400==0 or y%4==0 and y%100!=0:
