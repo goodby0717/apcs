@@ -1,0 +1,9 @@
+while(True):
+    try:
+        i=int(input())
+    except EOFError:
+        break
+    if i%4==0 and i%100!=0 or i%400==0:
+        print("a leap year")
+    else:
+        print("a normal year")
