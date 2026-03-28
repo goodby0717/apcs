@@ -1,0 +1,12 @@
+a=int(input())
+y=0
+for i in range(a):
+    k="a normal year"
+    y=int(input())
+    if y%4==0:
+        k="a leap year"
+        if y%100==0:
+            k="a normal year"
+            if y%400==0:
+                k="a leap year"
+    print(k)
