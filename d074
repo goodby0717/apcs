@@ -1,0 +1,7 @@
+t=int(input())
+maxx=int(0)
+l=input().split()
+for i in range(t):
+  if maxx<int(l[i]):
+    maxx=int(l[i])
+print(maxx)
