@@ -1,0 +1,15 @@
+N=int(input())
+A=[list(map(int,input().split())) for _ in range (N)]
+result=[]
+for a,b,c in A:
+    if a==1:
+        result.append(b+c)
+    elif a==2:
+        result.append(b-c)
+    elif a==3:
+        result.append(b*c)
+    elif a==4:
+        result.append(b//c)
+
+for r in result:
+    print(r)
