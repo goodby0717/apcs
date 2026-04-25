@@ -1,0 +1,9 @@
+a=int(input()) #輸入有幾行資料
+
+for i in range(0,a):    
+   b,c,d,e = map(int,input().split())  #判斷是等差數列還是等比數列
+   if(c-b) == (d-c):
+       print(b,c,d,e,e+(c-b))
+   
+   elif(c/b) == (d/c):
+       print(b,c,d,e,int(e*(c/b)))
