@@ -1,0 +1,16 @@
+d086. 態度之重要的證明 -- 成功電研20th~21st C++ ～最後的競賽～
+a = {"a":1,"b":2,"c":3,"d":4,"e":5,"f":6,"g":7,"h":8,"i":9,"j":10,"k":11,"l":12,"m":13,"n":14,"o":15,"p":16,"q":17,"r":18,"s":19,"t":20,"u":21,"v":22,"w":23,"x":24,"y":25,"z":26}
+while True:
+    count = 0
+    x = True
+    word = input().lower()
+    if word == "0":
+        break
+    for letter in word:
+        if letter not in a:
+            print("Fail")
+            x = False
+            break
+        count+=a[letter]
+    if x == True:
+        print(count)
