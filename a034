@@ -1,0 +1,15 @@
+#(1)10進位的除數除以2，得到的除數，先把它存到串列A
+#(2)床附醫的動作直到商為0
+while True:
+    try:
+        n=int(input())
+        a=[]
+        while n !=0:
+            a.append(n%2)
+            n=n//2
+        a.reverse()
+        for k in a:
+            print(k,end="")
+        print()
+    except:
+        break
