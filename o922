@@ -1,0 +1,11 @@
+n=int(input())#商絣總數
+p=list(map(int,input().split()))#每樣商品的單價
+total=0
+while 1:
+    a,b=map(int,input().split())
+    if a==0 and b==0:
+
+        break
+    total += b *p[a-1]
+print(total)
+
