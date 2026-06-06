@@ -1,7 +1,1 @@
-months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-cur_m, cur_d = map(int, input().split())
-bd_m, bd_d = map(int, input().split())
-cur_day_of_year = sum(months[:cur_m - 1]) + cur_d
-bd_day_of_year = sum(months[:bd_m - 1]) + bd_d
-ans = (bd_day_of_year - cur_day_of_year + 365) % 365
-print(ans)
+
