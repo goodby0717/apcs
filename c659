@@ -1,0 +1,6 @@
+a = list(input().split()) # 用空白隔開後，切成串列
+b = a[0] # 連接詞
+c = a[1:] # 第二個以後
+for i in range(len(c)-1):
+    print("{} {} ".format(c[i],b),end='')
+print(c[-1])
