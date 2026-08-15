@@ -1,0 +1,15 @@
+H,M,S,T=map(int,input().split())
+nm=H*60+M
+tm=T*90+nm
+th=tm//60
+tm=tm%60
+th=(th+36)%36
+print('{}'.format(th),end='')
+if tm <10:
+    print(':0{}'.format(tm),end='')
+else:
+    print(':{}'.format(tm),end='')
+if S <10:
+    print(':0{}'.format(S))
+else:
+    print(':{}'.format(S))
