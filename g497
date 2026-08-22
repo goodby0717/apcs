@@ -1,0 +1,11 @@
+n=int(input())
+a=list(map(int,input().split()))
+total=0
+now=1
+for i in range(n):
+    if a[i]>now:
+        total+=3*(a[i]-now)
+    else:
+        total+=2*(now-a[i])
+    now=a[i]
+print(total)
