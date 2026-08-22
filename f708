@@ -1,0 +1,9 @@
+m,n=map(int,input().split())
+a=list(map(int,input().split()))
+ms=sum(a)
+b=list(map(int,input().split()))
+bs=sum(b)
+if m>n and ms >bs:
+    print("Yes")
+else:
+    print("No")
