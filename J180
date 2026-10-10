@@ -1,0 +1,17 @@
+while True:
+    a=list(map(int,input().split()))
+    if a[0]==-1:
+        break
+    n=a[0]
+    e=a[1]
+    f=n*e
+    day=0
+    total_eat=0
+    while f>0:
+        day+=1 
+        f-=n
+        total_eat += n
+        x = total_eat // e
+        n -= x
+        total_eat =total_eat%e
+    print(day)
