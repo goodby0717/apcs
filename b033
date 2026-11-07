@@ -1,0 +1,10 @@
+H,M=map(int,input().split())
+if 14 <=H<=16:
+    if H==14 and M<20:
+        print('NO')
+    elif H==16 and M>40:
+        print('NO')
+    else:
+        print('YES')
+else:
+    print('NO')
